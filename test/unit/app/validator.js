@@ -28,7 +28,7 @@ describe('Validator', function() {
   });
 
   describe('Validator methods - empty instanciation', function() {
-    var validator;
+    let validator;
 
     before(function() {
       validator = new Validator();
@@ -42,17 +42,17 @@ describe('Validator', function() {
 
     it('should be valid', function() {
       let validation = validator.validate({});
-      validation.isValid(true).should.equal(true);
+      validation.isValid.should.equal(true);
 
       validation = validator.validate({
         'fuu': 'bar'
       });
-      validation.isValid(true).should.equal(true);
+      validation.isValid.should.equal(true);
     });
   });
 
   describe('Validator methods - true instanciation', function() {
-    var validator;
+    let validator;
 
     before(function() {
       validator = new Validator(true);
@@ -66,17 +66,17 @@ describe('Validator', function() {
 
     it('should be valid', function() {
       let validation = validator.validate({});
-      validation.isValid(true).should.equal(true);
+      validation.isValid.should.equal(true);
 
       validation = validator.validate({
         'fuu': 'bar'
       });
-      validation.isValid(true).should.equal(true);
+      validation.isValid.should.equal(true);
     });
   });
 
   describe('Validator methods - false instanciation', function() {
-    var validator;
+    let validator;
 
     before(function() {
       validator = new Validator(false);
@@ -90,12 +90,13 @@ describe('Validator', function() {
 
     it('should be valid', function() {
       let validation = validator.validate({});
-      validation.isValid(false).should.equal(false);
+      
+      validation.isValid.should.equal(false);
 
       validation = validator.validate({
         'fuu': 'bar'
       });
-      validation.isValid(false).should.equal(false);
+      validation.isValid.should.equal(false);
     });
   });
 });
