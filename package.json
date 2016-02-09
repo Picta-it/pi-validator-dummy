@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/Picta-it/pi-validator-dummy#readme",
   "dependencies": {
+    "lodash": "^4.3.0",
     "pi-validator": "^1.0.0"
   },
   "devDependencies": {
