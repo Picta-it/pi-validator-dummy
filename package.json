@@ -1,6 +1,6 @@
 {
   "name": "pi-validator-dummy",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A JSON dummy validator",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/Picta-it/pi-validator-dummy#readme",
   "dependencies": {
-    "pi-validator": "^1.0.0"
+    "lodash": "^4.3.0",
+    "pi-validator": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",
