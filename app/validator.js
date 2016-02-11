@@ -1,10 +1,12 @@
 'use strict';
 
-// var Validator = require('pi-validator');
-var _ = require('lodash');
+var Validator = require('pi-validator'),
+    _ = require('lodash');
 
-class DummyValidator {
+class DummyValidator extends Validator {
   constructor(value) {
+    super(value);
+
     if(! _.isUndefined(value)) {
       this.value = value;
     }
