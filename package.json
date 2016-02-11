@@ -1,6 +1,6 @@
 {
   "name": "pi-validator-dummy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A JSON dummy validator",
   "main": "index.js",
   "scripts": {
