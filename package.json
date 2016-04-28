@@ -2,7 +2,7 @@
   "name": "pi-validator-dummy",
   "version": "1.0.2",
   "description": "A JSON dummy validator",
-  "main": "index.js",
+  "main": "app/validator.js",
   "scripts": {
     "test": "gulp test",
     "start": "node index.js"
